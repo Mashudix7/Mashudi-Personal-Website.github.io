@@ -70,12 +70,19 @@
           <img src="Album Project/Friend14.jpg" alt="" />
           <img src="Album Project/Friend15.jpg" alt="" />
         </div>
-      </div>
-      <div class="back">
-        <a href="https://mashudix7.github.io/Mashudi-Personal-Website.github.io/">
-          <button>Back To HomePage</button>
-        </a>
-      </div>
+     <div class="back">
+  <a href="https://mashudix7.github.io/Mashudi-Personal-Website.github.io/" id="backButton">
+    <button>Back To HomePage</button>
+  </a>
+</div>
+
+<script>
+  var backButton = document.getElementById('backButton');
+  backButton.addEventListener('click', function() {
+    window.location.href = "https://mashudix7.github.io/Mashudi-Personal-Website.github.io/";
+  });
+</script>
+
     </div>
   </body>
 </html>
