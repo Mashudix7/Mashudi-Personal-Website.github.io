@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar-container">
+        <div class="nav">
+            <h2 id="mashudi" onclick="toggleFont()">Mashudi XD</h2>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#hello">Hello</a></li>
+                <li><a href="#studying">Education</a></li>
+                <li><a href="#softskills">Soft Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#project">My Project</a></li>
+                <li><a href="Album/gallery.html">My Gallery</a></li>
+                <li><a href="https://www.instagram.com/mshdiii17">My IG</a></li>
+                <img src="Dark Mode Icons/moon.png" id="icon">
+           </ul>
+        </div>
+    </div>
+
+    <!-- ISI -->
+    <div class="web-body" id="hello">
+       <img src="Image/Mee.jpg" alt="">
+       <h1><span></span></h1> 
+       <p> This is my first website, which contains my personal information and projects I have worked on and will continue to develop. Feel free to browse or find references and enjoy..</p>
+       <a href="#studying"><button>Read More</button></a>
+    </div>
+    <div class="waves">
+        <img src="Dark Mode Icons/wave2 (2).svg" >
+        <img src="Dark Mode Icons/wave2 (1).svg" width="0" height="0">
+    </div>
+
+<!-- Educations -->
+<br id="studying"><br>
+    <div class="card-education">
+<h1>My Educational History</h1>
+<div class="card-left">
+    <a href="https://maps.app.goo.gl/fmQSmBeca9PpykTa7">
+        <img src="Image/SD.png" alt="">
+    </a>
+    <p><h3>Elementary School</h3></p>
+    <p>I attended elementary school at SDN Jelambar Baru 01 Pagi, Jelambar Baru, Kec.Grogol Petamburan, West Jakarta, - DKI Jakarta.</p>
+</div>
+<div class="card-mid">
+    <a href="https://maps.app.goo.gl/az6DVJWsCmnTLHpr9">
+    <img src="Image/SMP.png" alt="">
+    </a>
+        <p><h3>Junior High School</h3></p>
+    <p>I attended junior high school at SMPN 82 Jakarta, Jelambar, Kec, Grogol Petamburan, West Jakarta, - DKI Jakarta.</p>
+</div>
+<div class="card-right">
+    <a href="https://maps.app.goo.gl/MeWAFtk3akSQnXfu7">
+        <img src="Image/SMK.png" alt="">
+    </a>
+    <p><h3>Vocational High School</h3></p>
+    <p>I attended vocational high school at SMKN 17 Jakarta, Slipi, Kec. Palmerah, West Jakarta - DKI Jakarta.</p>
+</div>
+    </div>
+
+<!-- SoftSkills -->
+<br>
+    <div class="card-softskills">
+        <br id="softskills"><br><br><br> 
+        <h1>My Soft Skills</h1>
+        <div class="card-kiri">
+            <img src="Image/Digital-Marketing.png" alt="">
+            <p><h3>Digital Marketing Skills</h3></p>
+            <p>I have a strong ability to sell and promote goods or services to customers, as well as to interact with customers effectively in an online setting.</p>
+        </div>
+        <div class="card-tengah">
+            <img src="Image/Desain.png" alt="">
+            <p><h3>Graphic Designer</h3></p>
+            <p>I have skills in online design, capable of implementing color and composition of elements in design</p>
+        </div>
+        <div class="card-kanan">
+            <img src="Image/Gaming.png" alt="">
+            <p><h3>Gamers</h3></p>
+            <p>I have advanced skills in playing games, such as Free Fire, Mobile Legends, and others. I even achieved the runner-up position twice consecutively in the 'Piala Pelajar' competition at the DKI Jakarta level.</p>
+        </div>
+            </div>
+
+            <!--CARD PROJECT -->
+            <div class="card-project" id="project">
+                <br id="project"><br><br><br> 
+                <h1>My Project</h1>
+                <span class="overlay"></span>
+                <div class="card-l">
+                    <img src="Image/project1.jpg" alt="">
+                    <p><h3>About Me Website</h3></p>
+                    <p>It is a website that contains information about me</p>
+                   <a href="MashudiXRPL2/FirstProjectweb.html">
+                    <button>See Project</button>
+                   </a> 
+                </div>
+                <div class="card-m">
+                    <img src="Image/project2.jpg" alt="">
+                    <p><h3>Odd-Even Vehicle Check</h3></p>
+                    <p>It is a website to check odd or even license plates</p>
+                    <button>See Project</button>
+                </div>
+                <div class="card-r">
+                    <img src="Image/project3.jpg" alt="">
+                    <p><h3>YUK ZAKAT!!</h3></p>
+                    <p>It is a website for calculating zakat on gold, and trade."
+                    </p>
+                    <a href="ZakatPt2/zakat.html">
+                        <button>See Project</button>
+                    </a>
+                </div>
+                    </div>
+
+<!-- CONTACT -->
+            <div class="box-contact" id="contact">
+                <br>
+<h1> If Need Something Contact Me..</h1>
+<h2 class="nomor">+62 897 3752 043</h2>
+<img src="Image/Callme.png" alt="">
+            </div>
+
+<!-- COPYRIGHT -->
+        <div class="footer">
+<p>Copyright : Mashudi X RPL 2</p>
+        </div>
+
+        <script>
+            var icon = document.getElementById("icon");
+            var waves = document.querySelectorAll(".waves img");
+        
+            icon.onclick = function() {
+                document.body.classList.toggle("k-theme");
+                if (document.body.classList.contains("k-theme")) {
+                    icon.src = "Dark Mode Icons/sun.png";
+                    waves[0].src = "Dark Mode Icons/wave2 (1).svg"; 
+                } else {
+                    icon.src = "Dark Mode Icons/moon.png";
+                    waves[0].src = "Dark Mode Icons/wave2 (2).svg"; 
+                }
+            }
+        
+         
+            function toggleFont() {
+    var body = document.body;
+    var currentFont = body.style.fontFamily;
+
+    if (currentFont === "verdana") {
+        body.style.fontFamily = "cursive";
+    } else if (currentFont === "cursive") {
+        body.style.fontFamily = "italic";
+    } else {
+        body.style.fontFamily = "verdana";
+    }
+}
+
+        </script>
+        
+</body>
+</html>
+

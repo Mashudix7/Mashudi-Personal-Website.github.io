@@ -1,0 +1,441 @@
+/* HTML */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* HTML TUTUP */
+
+/* NAVBAR */
+
+.navbar-container {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 70px;
+  color: white;
+  position: fixed;
+}
+
+.nav {
+  float: left;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease;
+}
+
+.nav:hover {
+  text-shadow: 0px 0px 13px white;
+}
+
+.navbar {
+  margin-left: 340px;
+  padding-top: 27px;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 51px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5;
+  transition: text-shadow 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: white;
+  text-shadow: 5px 0px 30px rgb(253, 253, 255);
+}
+
+#icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  position: fixed;
+  right: 25px;
+  top: 18px;
+  transition: width 0.3s, height 0.3s;
+}
+
+#icon:hover {
+  width: 36px;
+  height: 36px;
+}
+
+#icon:not(:hover) {
+  width: 32px;
+  height: 32px;
+}
+
+:root {
+  --primary-color: #3b4497;
+  --secony-color: #3b5999;
+  --tertiary-color: lightblue;
+}
+
+.k-theme {
+  --primary-color: #252727;
+  --secony-color: #929293;
+  --tertiary-color: rgb(37, 43, 44);
+}
+/* NAVBAR END*/
+
+/* ISI */
+.web-body {
+  background-color: var(--secony-color);
+  height: 630px;
+  text-align: center;
+  color: white;
+}
+
+.web-body img {
+  border-radius: 100px;
+  border: 2px solid white;
+  height: 200px;
+  margin-top: 130px;
+}
+
+.web-body h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.web-body p {
+  width: 650px;
+  text-align: center;
+  margin-left: 302px;
+  margin-top: 40px;
+  font-size: 17px;
+}
+
+.web-body button {
+  margin-top: 30px;
+  padding: 10px;
+  height: 50px;
+  width: 400px;
+  border-radius: 50px;
+  border: none;
+}
+
+.web-body button:hover {
+  background-color: var(--secony-color);
+  border: 1.5px solid white;
+  color: white;
+}
+
+.web-body input {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  appearance: none;
+  background-color: #434343;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+h1 span:before {
+  content: "";
+  animation: gerak infinite 8s ease;
+  transform: translateY(-50%);
+  color: var(--tertiary-color);
+  font-size: 40px;
+}
+
+@keyframes gerak {
+  0% {
+    content: "Welcome To My Personal Website";
+  }
+
+  50% {
+    content: "I'm Mashudi, The Creator Of This Website";
+  }
+
+  100% {
+    content: "Thanks For Your Visitting, Warm Regards";
+  }
+}
+
+.change-font {
+  font-size: 15px;
+  width: 145px;
+  height: 40px;
+  color: #fff;
+  padding: 8px 8px;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  border-color: white;
+  margin: 0px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: width 0.3s, height 0.3s;
+}
+
+.change-font:hover {
+  width: 155px;
+  height: 4px;
+  color: white;
+}
+
+#mashudi {
+  position: relative;
+  transition: color 0.3s;
+}
+
+#mashudi:hover::after {
+  content: "Change Fonts Button";
+  color: #3b4497;
+  border-radius: 25px;
+  font-size: 11px;
+  width: 140px;
+  height: 17px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.63);
+  padding: 5px;
+  border: 1px solid #0f76d1;
+  transition: opacity 0.5s ease, background-color 0.3s ease, color 0.5s ease;
+  pointer-events: none;
+}
+
+#mashudi:hover::after {
+  opacity: 1;
+}
+
+/* ISI END*/
+
+/* EDUCATION */
+.card-education {
+  text-align: center;
+  color: #4d4d4d;
+  margin-top: 60px;
+  align-content: center;
+}
+
+.card-education img {
+  height: 170px;
+}
+
+.card-left,
+.card-mid,
+.card-right {
+  width: 305px;
+  height: 350px;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 30px 30px;
+  padding-top: 30px;
+  padding-right: 1px;
+  padding-left: 1px;
+  margin: 70px 20px 20px 73px;
+  border-radius: 10px;
+  float: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-left:hover,
+.card-mid:hover,
+.card-right:hover {
+  background-color: var(--secony-color);
+  color: white;
+}
+
+.card-education h3,
+p {
+  margin-top: 20px;
+  margin-bottom: 13px;
+  padding: 0px 20px;
+}
+
+/* SOFTSKILLS */
+
+.card-softskills {
+  text-align: center;
+  color: #4d4d4d;
+  margin-top: 560px;
+  align-content: center;
+}
+
+.card-softskills img {
+  height: 170px;
+}
+
+.card-kiri,
+.card-tengah,
+.card-kanan {
+  width: 305px;
+  height: 370px;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 30px 30px;
+  padding-top: 30px;
+  padding-right: 1px;
+  padding-left: 1px;
+  margin: 70px 20px 20px 73px;
+  border-radius: 10px;
+  float: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-kiri:hover,
+.card-tengah:hover,
+.card-kanan:hover {
+  background-color: var(--secony-color);
+  color: white;
+}
+
+.card-softskills h1,
+p {
+  margin-top: 20px;
+  margin-bottom: 13px;
+  padding: 0px 20px;
+}
+
+.card-softskills h1 {
+  margin-top: 50px;
+  font-size: 32px;
+}
+
+/* CONTACT */
+.box-contact {
+  text-align: center;
+  margin-top: 750px;
+  color: var(--primary-color);
+}
+
+.box-contact img {
+  height: 390px;
+  margin-bottom: -25px;
+}
+
+.box-contact h1 {
+  margin-bottom: 35px;
+  font-size: 23px;
+}
+
+.box-contact h2 {
+  margin-bottom: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+
+.nomor {
+  background-color: var(--primary-color);
+  color: white;
+  width: 300px;
+  height: 36px;
+  margin-left: 475px;
+  border-radius: 25px;
+  padding-top: 5px;
+}
+
+/* CARD PROJECT */
+.card-project h1 {
+  color: #39392f;
+}
+.card-project {
+  text-align: center;
+  color: #36352f;
+  margin-top: 530px;
+  align-content: center;
+}
+
+.card-project img {
+  height: 240px;
+  width: 240px;
+  border: 4px solid #3b4499;
+  border-radius: 25px;
+}
+
+.card-l,
+.card-m,
+.card-r {
+  width: 305px;
+  height: 432px;
+  background-color: #285ed2dc;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin: 70px 20px 20px 30px;
+  border-radius: 10px;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.5s ease, box-shadow 0.3s ease;
+}
+
+.card-l:hover,
+.card-m:hover,
+.card-r:hover {
+  background-color: rgba(88, 158, 234, 0.838);
+  box-shadow: 0 0 30px 5px rgba(72, 156, 241, 0.881);
+
+  color: white;
+}
+
+.card-project h1,
+p {
+  margin-top: 20px;
+  margin-bottom: 13px;
+  padding: 0px 20px;
+}
+
+.card-project h1 {
+  margin-top: 50px;
+  font-size: 32px;
+}
+
+.card-project h3 {
+  margin-top: 40px;
+}
+
+.card-project button {
+  border: none;
+  font-size: 16px;
+  width: 145px;
+  height: 36px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #0f2659dc;
+  border-radius: 6px;
+  margin: 5px;
+  cursor: pointer;
+  transition: width 0.3s, height 0.3s;
+}
+
+.card-project button:hover {
+  width: 155px;
+  height: 43px;
+
+  color: white;
+}
+
+/* COPYRIGHT */
+.footer {
+  background-color: var(--primary-color);
+  color: #f0f0f0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+.footer p {
+  padding-top: 10px;
+  color: #f0f0f0;
+}

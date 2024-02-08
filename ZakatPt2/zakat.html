@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="zakat.css" />
+    <title>Kalkulator Zakat</title>
+  </head>
+  <body class="background-image">
+    <div class="calculator">
+      <div class="judul">
+        <h2>Kalkulator Zakat</h2>
+      </div>
+      <label for="mal">Harta Mal (Rp): </label>
+      <input type="number" id="mal" placeholder="Masukkan jumlah harta mal" />
+      <button onclick="hitungZakatMal()">Hitung Zakat Mal</button>
+      <br />
+      <br />
+      <label for="perdagangan">Nilai Perdagangan (Rp): </label>
+
+      <input
+        type="number"
+        id="perdagangan"
+        placeholder="Masukkan nilai perdagangan"
+      />
+      <button onclick="hitungZakatPerdagangan()">
+        Hitung Zakat Perdagangan
+      </button>
+      <br />
+      <br />
+      <label for="emas">Berat Emas (gram): </label>
+      <input type="number" id="emas" placeholder="Masukkan berat emas" />
+      <button onclick="hitungZakatEmas()">Hitung Zakat Emas</button>
+      <br />
+      <br />
+      <label for="tabungan">Tabungan (Rp): </label>
+      <input
+        type="number"
+        id="tabungan"
+        placeholder="Masukkan jumlah tabungan"
+      />
+      <button onclick="hitungZakatTabungan()">Hitung Zakat Tabungan</button>
+
+      <div id="result"></div>
+
+      <p class="credit">Created By Mashudi X RPL 2</p>
+    </div>
+    <script src="zakat.js"></script>
+  </body>
+</html>
